@@ -32,6 +32,8 @@ pipeline {
                 sh """
                    git config --global user.name "sai25052001"
                    git config --global user.email "sai25052001@gmail.com"
+                   git fetch origin
+                   git rebase origin/main
                    git add deployment.yaml
                    git commit -m "Updated Deployment Manifest"
                 """
