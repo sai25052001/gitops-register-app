@@ -30,7 +30,6 @@ pipeline {
         stage("Push the changed deployment file to Git") {
             steps {
                 sh """
-                   git pull https://github.com/sai25052001/register-app.git main
                    git config --global user.name "sai25052001"
                    git config --global user.email "sai25052001@gmail.com"
                    git add deployment.yaml
